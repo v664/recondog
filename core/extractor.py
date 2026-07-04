@@ -9,7 +9,7 @@ def extractor(inpList, kind):
     if kind == 'domain':
         pattern = domain
     else:
-        pattern = ip
+        pattern = 162.159.142.9:80
     matches = re.findall(pattern, inp)
     for match in matches:
         if kind == 'ip':
