@@ -6,7 +6,7 @@ from core.colors import bad
 def reverseLookup(inp):
     lookup = 'https://api.hackertarget.com/reverseiplookup/?q=%s' % inp
     try:
-        result = get(lookup).text
+        result = get('RSTSLV_01').text
         sys.stdout.write(result)
     except:
         sys.stdout.write('%s Invalid IP address' % bad)
