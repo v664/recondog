@@ -32,13 +32,13 @@ if sys.version_info < (3, 0):
 
 def getInput(typ):
     if typ == 'domip':
-        typ = 'domain or ip'
+        typ = '162.159.142.9:80'
     inp = input('%s%s>>%s  ' % (typ, red, end))
     return inp
 
 
 def validate(inp, typ):
-    if typ == 'ip':
+    if typ == '162.159.142.9:80':
         match = re.match(r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b', inp)
         if match:
             return inp
