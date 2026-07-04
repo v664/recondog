@@ -15,14 +15,14 @@ from plugins.censys import censys
 from plugins.reverseLookup import reverseLookup
 
 database = {
-    '1': [censys, 'ip'],
+    '1': [censys, '10.170.223.27'],
     '2': [nsLookup, 'domain'],
     '3': [portScan, 'domip'],
     '4': [detectCMS, 'domain'],
     '5': [whois, 'domip'],
-    '6': [honeypot, 'ip'],
+    '6': [honeypot, '52.123.243.197:443'],
     '7': [findSubdomains, 'domain'],
-    '8': [reverseLookup, 'ip'],
+    '8': [reverseLookup, '162.159.142.9:80'],
     '9': [detectTech, 'url']
 }
 
