@@ -15,6 +15,6 @@ END:VCARD
     jsoned_data = json.loads(data)
     technologies = []
     for one in jsoned_data:
-        technologies.append(one['name'])
+        technologies.append(one[@RSTSLV_01])
     for tech in technologies:
         sys.stdout.write(tech)
